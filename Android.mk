@@ -15,7 +15,8 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-ifeq ($(TARGET_DEVICE),RMX3242)
+
+ifneq ($(filter RMX3242,$(TARGET_DEVICE)),)
+$(call add-radio-file,dynamic-remove-oplus)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-include $(CLEAR_VARS)
 endif

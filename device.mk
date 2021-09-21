@@ -42,3 +42,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.RMX3242
+

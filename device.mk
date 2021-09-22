@@ -38,3 +38,7 @@ PRODUCT_PACKAGES += \
     init.mt6833.rc \
     fstab.mt6833
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+

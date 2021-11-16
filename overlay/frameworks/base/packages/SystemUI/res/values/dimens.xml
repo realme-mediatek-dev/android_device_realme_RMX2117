@@ -28,4 +28,8 @@
 
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
+
+    <!-- Set fingerprint/power button vertical position -->
+    <dimen name="physical_power_button_center_screen_location_y">1020px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1020px</dimen>
 </resources>

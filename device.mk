@@ -29,3 +29,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# The first api level, device has been commercially launched on.
+PRODUCT_SHIPPING_API_LEVEL := 30

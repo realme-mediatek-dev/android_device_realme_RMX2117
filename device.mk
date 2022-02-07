@@ -25,3 +25,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd

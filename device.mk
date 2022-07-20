@@ -126,4 +126,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-
+# InCall Service
+PRODUCT_PACKAGES += \
+    MtkInCallService

@@ -27,10 +27,10 @@
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
-    <bool name="config_device_volte_available">false</bool>
+    <bool name="config_device_volte_available">true</bool>
 
     <!-- Flag specifying whether VT is available on device -->
-    <bool name="config_device_vt_available">false</bool>
+    <bool name="config_device_vt_available">true</bool>
 
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>

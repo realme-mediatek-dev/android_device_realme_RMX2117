@@ -15,6 +15,9 @@
 
 DEVICE_PATH := device/realme/RMX3242
 
+# Inherit Vendor Blobs
+$(call inherit-product, vendor/realme/RMX3242/RMX3242-vendor.mk)
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080

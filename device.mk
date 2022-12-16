@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
 # The first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Extra VNDK Versions
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
+
 # Init
 PRODUCT_PACKAGES += \
     init.mt6833.rc \

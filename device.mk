@@ -15,6 +15,9 @@
 
 DEVICE_PATH := device/realme/RMX3242
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Inherit Vendor Blobs
 $(call inherit-product, vendor/realme/RMX3242/RMX3242-vendor.mk)
 

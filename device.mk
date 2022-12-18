@@ -65,3 +65,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
+
+# HIDL
+PRODUCT_PACKAGES += \
+    libhardware

@@ -78,8 +78,7 @@ PRODUCT_COPY_FILES += \
 # RRO-Overlays
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
-    WifiOverlay \
-    NotchBarKiller
+    WifiOverlay
 
 # HIDL
 PRODUCT_PACKAGES += \

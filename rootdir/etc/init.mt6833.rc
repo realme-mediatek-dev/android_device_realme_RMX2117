@@ -14,6 +14,10 @@ on post-fs
     #  so it is fine to just revert back)
     umount /vendor/etc/fstab.mt6833
 
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
+
 # Include logger service
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
     class main

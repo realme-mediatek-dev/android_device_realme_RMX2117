@@ -33,7 +33,9 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    hardware/oplus
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -62,6 +64,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX3242
+
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 # Ramdisk
 PRODUCT_COPY_FILES += \

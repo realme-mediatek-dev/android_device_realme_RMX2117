@@ -80,6 +80,14 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.gsma.services.nfc  \
+    NfcNci \
+    SecureElement \
+    Tag
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhardware

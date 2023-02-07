@@ -37,7 +37,7 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1670672091529 release-keys"
+    PRIVATE_BUILD_DESC="sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1672892460208 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "realme/RMX3242/RE513CL1:13/TP1A.220905.001/R.ca0f55-1:user/release-keys"
+BUILD_FINGERPRINT := "realme/RMX3242/RE513CL1:13/TP1A.220905.001/R.d50f4e-df7d:user/release-keys"

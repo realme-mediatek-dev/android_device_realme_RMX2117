@@ -1,0 +1,6 @@
+# Kernel Power Off Charging (KPOC)
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib64/libshowlogo.so
+lib/libsysenv_system.so
+lib64/libsysenv_system.so

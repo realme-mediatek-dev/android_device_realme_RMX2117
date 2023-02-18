@@ -7,3 +7,6 @@
 
 # Sysbta
 /system/bin/hw/android\.hardware\.bluetooth\.audio-service-system u:object_r:hal_audio_sysbta_exec:s0
+
+# Kernel Power Off Charging (KPOC)
+/system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0

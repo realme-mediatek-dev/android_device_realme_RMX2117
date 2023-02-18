@@ -1,3 +1,10 @@
+
+# Camera
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.lineageos.aperture,com.android.camera,com.google.camera \
+    vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera,com.google.camera \
+    vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
 # MediaTek Perf Enhancements
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.mtk_perf_simple_start_win=1 \

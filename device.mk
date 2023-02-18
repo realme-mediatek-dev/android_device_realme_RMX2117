@@ -52,7 +52,6 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Init
 PRODUCT_PACKAGES += \
-    init.recovery.mt6833.rc \
     init.mt6833.rc \
     fstab.mt6833
 

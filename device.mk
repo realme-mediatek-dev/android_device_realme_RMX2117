@@ -120,3 +120,7 @@ PRODUCT_BOOT_JARS += \
 # DRM
 PRODUCT_PACKAGES += \
     libdrm
+
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend

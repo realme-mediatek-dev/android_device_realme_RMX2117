@@ -116,3 +116,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     oplus-framework
+
+# DRM
+PRODUCT_PACKAGES += \
+    libdrm

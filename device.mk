@@ -95,7 +95,9 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhardware
+    libhardware \
+    libhidltransport \
+    libhwbinder
 
 # Bluetooth Audio (System-side HAL, sysbta)
 PRODUCT_PACKAGES += \
@@ -124,3 +126,5 @@ PRODUCT_PACKAGES += \
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend
+
+

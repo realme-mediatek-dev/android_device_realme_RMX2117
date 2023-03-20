@@ -1,8 +1,7 @@
-service fps_hal.RMX3242 /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3242
-    interface android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
-    interface android.hardware.biometrics.fingerprint@2.2::IBiometricsFingerprint default
-    interface android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint default
-    interface vendor.oplus.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
+service fps_hal /odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
     class late_start
     user system
     group system input uhid
@@ -91,3 +90,12 @@ on post-fs-data
 #Ziqing.Guo@EXP.BSP.Fingerprint.Basic, 2019/08/17, modify for sdsp init fail
 on property:sys.boot_completed=1
     setprop vendor.oplus.biometrics.fingerprint.boot_completed 1
+
+service fps_hal.RMX3242 /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3242
+    interface android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
+    interface android.hardware.biometrics.fingerprint@2.2::IBiometricsFingerprint default
+    interface android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint default
+    interface vendor.oplus.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
+    class late_start
+    user system
+    group system input uhid

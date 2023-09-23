@@ -42,3 +42,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.bluetooth.system_audio_hal.enabled=1
+
+# VoNR (Voice Over New radio)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.radio.is_vonr_enabled_0=true \
+    persist.radio.is_vonr_enabled_1=true

@@ -16,6 +16,7 @@ LOCAL_SRC_FILES := \
 LOCAL_SHARED_LIBRARIES := \
     liblog \
     libhidlbase \
+    libvndksupport \
     android.hardware.light@2.0
 
 LOCAL_STATIC_LIBRARIES := \

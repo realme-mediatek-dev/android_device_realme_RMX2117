@@ -1,3 +1,4 @@
 type sysfs_battery_supply, sysfs_type, fs_type;
 type sysfs_disp_hbm, sysfs_type, fs_type;
 type sysfs_graphics_ffl, sysfs_type, fs_type;
+type sysfs_fps, sysfs_type, fs_type;

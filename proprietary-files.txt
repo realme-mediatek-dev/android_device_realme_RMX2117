@@ -1,9 +1,9 @@
-# Kernel Power Off Charging (KPOC)
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib64/libshowlogo.so
-lib/libsysenv_system.so
-lib64/libsysenv_system.so
+# Kernel Power Off Charging (KPOC) - from RMX3741_14.0.0.83(EX01) 
+bin/kpoc_charger|5a1df1ce79db1ec31caea4d4c3c4d896066b1193
+etc/init/kpoc_charger.rc|2ce485c39956849bd2294428d801c3c26ec1c040
+lib64/libshowlogo.so|658af2d8609ed5b2649d36b9b06e6de2ade3c455
+lib/libsysenv_system.so|b2d572a4fb828281f1f12e87999505e27dd9fd54
+lib64/libsysenv_system.so|4ec86717f6a8951d59a2f51394a5314b526ce454
 
 # IMS
 bin/vtservice

@@ -37,7 +37,7 @@ framework/mediatek-gwsdv2.jar
 -framework/mediatek-ims-common.jar
 framework/mediatek-ims-extension-plugin.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-base.jar|d7a8d9b752129711f195aa5ea3cc1a952db35bc5
 -framework/mediatek-telephony-common.jar
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so

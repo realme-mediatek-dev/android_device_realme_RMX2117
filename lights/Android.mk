@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := android.hardware.light@2.0-service.RMX3242
+LOCAL_MODULE := android.hardware.light@2.0-service.RMX2117
 LOCAL_MODULE_STEM := android.hardware.lights-service.mediatek
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/bin
 LOCAL_MODULE_RELATIVE_PATH := hw
@@ -16,8 +16,8 @@ LOCAL_SRC_FILES := \
 LOCAL_SHARED_LIBRARIES := \
     liblog \
     libhidlbase \
-    libvndksupport \
-    android.hardware.light@2.0
+    android.hardware.light@2.0 \
+    libvndksupport
 
 LOCAL_STATIC_LIBRARIES := \
     libbase \

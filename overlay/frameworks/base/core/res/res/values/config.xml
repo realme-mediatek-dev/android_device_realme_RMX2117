@@ -21,6 +21,8 @@
      for different hardware and product builds.  Do not translate. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
@@ -101,7 +103,7 @@
          Note that a physical cutout should be configured in pixels for the best results.
     -->
     <string name="config_mainBuiltInDisplayCutout">M -544,0 L -544,115 L -382,115 L -382,0 Z</string>
-    
+        <string name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H 164 V 118 H 0 Z @left</string>
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent">Android-Mms/0.1</string>
 
@@ -126,6 +128,9 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
+
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>10.45935</item>   <!-- 0-1 -->
         <item>29.25559</item>   <!-- 1-2 -->
@@ -309,7 +314,7 @@
     <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- The default peak refresh rate. -->
-    <integer name="config_defaultPeakRefreshRate">90</integer>
+    <integer name="config_defaultPeakRefreshRate">120</integer>
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
@@ -341,5 +346,4 @@
 
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
-
 </resources>

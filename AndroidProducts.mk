@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_RMX3242.mk
+    $(LOCAL_DIR)/cipher_RMX2117.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_RMX3242-user \
-    cipher_RMX3242-userdebug \
-    cipher_RMX3242-eng
+    cipher_RMX2117-user \
+    cipher_RMX2117-userdebug \
+    cipher_RMX2117-eng

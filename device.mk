@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/realme/RMX3242
+DEVICE_PATH := device/realme/RMX2117
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Inherit Vendor Blobs
-$(call inherit-product, vendor/realme/RMX3242/RMX3242-vendor.mk)
+$(call inherit-product, vendor/realme/RMX2117/RMX2117-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -45,15 +45,15 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # The first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6833.rc \
-    fstab.mt6833
+    init.mt6853.rc \
+    fstab.mt6853
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -61,17 +61,17 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RMX3242
+    android.hardware.light@2.0-service.RMX2117
 
 # Biometrics
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.RMX3242
+    android.hardware.biometrics.fingerprint@2.3-service.RMX2117
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6833
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6853:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6853
 
 # System prop
 -include $(DEVICE_PATH)/system_prop.mk
@@ -108,6 +108,15 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
+# DRM
+PRODUCT_PACKAGES += \
+    libdrm
+
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend
+
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
@@ -118,14 +127,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common
 
-# DRM
-PRODUCT_PACKAGES += \
-    libdrm
-
-# KPOC
-PRODUCT_PACKAGES += \
-    libsuspend
-
-# InCall Service
+# MTK
 PRODUCT_PACKAGES += \
     MtkInCallService

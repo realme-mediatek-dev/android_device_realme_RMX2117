@@ -18,4 +18,11 @@
 
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
+    <dimen name="status_bar_padding_start">224px</dimen>
+    <dimen name="status_bar_padding_end">50px</dimen>
+    <dimen name="status_bar_header_height_keyguard">133px</dimen>
+    <dimen name="keyguard_carrier_text_margin">25px</dimen>
+    <dimen name="system_icons_keyguard_padding_end">50px</dimen>
+    <!-- The padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">24.0px</dimen>
 </resources>

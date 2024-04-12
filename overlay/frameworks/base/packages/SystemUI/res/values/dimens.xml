@@ -18,13 +18,13 @@
 <resources>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">7dp</dimen>
+<!--    <dimen name="status_bar_padding_top">7dp</dimen>
 
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">0dp</dimen>
+   - the padding on the start of the statusbar
+    <dimen name="status_bar_padding_start">20dp</dimen>
 
-    <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">10dp</dimen>
+     the padding on the end of the statusbar
+    <dimen name="status_bar_padding_end">10dp</dimen> -->
 
     <!-- Set fingerprint/power button vertical position -->
     <dimen name="physical_power_button_center_screen_location_y">880px</dimen>
@@ -32,4 +32,8 @@
 
     <!-- Location on the screen of the center of the fingerprint sensor -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
-</resources>
+
+    <dimen name="status_bar_padding_end">10dp</dimen></resources>
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">1dp</dimen>
+    <dimen name="status_bar_padding_top">6dp</dimen>
